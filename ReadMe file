@@ -1,0 +1,111 @@
+## Features
+
+- **Multi-modal Transportation**: Compares both driving and train options
+- **Real-time Traffic Updates**: Provides current road conditions and congestion levels
+- **Train Schedule Integration**: Shows available trains with departure times and seat availability
+- **Smart Route Optimization**: Suggests the best route based on current conditions
+- **Interactive Chat Interface**: Simple, natural language interaction
+
+## Project Structure
+
+```
+├── src/
+│   ├── chatbot.py        # Python chatbot implementation
+│   ├── App.tsx           # React frontend component
+│   ├── main.tsx         # React entry point
+│   └── index.css        # Tailwind CSS styles
+├── package.json         # Node.js dependencies
+└── README.md           # Project documentation
+```
+
+## Prerequisites
+
+- Python 3.x
+- Node.js 18+ and npm
+- Modern web browser
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd travel-information-chatbot
+```
+
+2. Install Node.js dependencies:
+```bash
+npm install
+```
+
+## Running the Application
+
+### Python Chatbot (Command Line Interface)
+
+To run the command-line version of the chatbot:
+
+```bash
+python3 src/chatbot.py
+```
+
+You can then interact with the chatbot by typing queries like:
+- "What's the route from Paris to Lyon?"
+- "How can I travel from Lyon to Paris?"
+
+### Web Interface (React Frontend)
+
+To start the development server:
+
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:5173`
+
+## Technical Details
+
+### Backend (Python)
+
+The Python implementation consists of three main components:
+
+1. **TransportAPI**: Simulates real-world transportation APIs
+   - Traffic data
+   - Train schedules
+   - Route information
+
+2. **RouteOptimizer**: Handles route calculations
+   - Traffic analysis
+   - Train schedule optimization
+   - Travel time estimation
+
+3. **TravelChatbot**: Processes user queries
+   - Natural language understanding
+   - Multi-modal route suggestions
+   - Response formatting
+
+### Frontend (React + TypeScript)
+
+The web interface is built with:
+- React 18
+- TypeScript
+- Tailwind CSS
+- Vite build tool
+
+## Current Limitations
+
+- Limited to routes between Paris and Lyon
+- Uses simulated data instead of real API connections
+- Basic natural language processing
+
+## Future Enhancements
+
+- Integration with real transportation APIs
+- Support for more cities and routes
+- Advanced natural language processing
+- Real-time updates and notifications
+- Mobile application support
+- Weather data integration
+- Fare comparison and booking integration
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
